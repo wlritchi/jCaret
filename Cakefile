@@ -10,7 +10,7 @@ exec = (cmd, cb, opt) ->
     cb() if cb
 
 task 'build', 'Build *.coffee to jquery.caret.min.js', ->
-  exec 'rm *.js', ->
+  exec 'rm *.js || true', ->
     exec 'coffee -bc *.coffee', ->
       exec 'cp COPYING jquery.caret.min.js', ->
         exec 'java -jar lib/closure-compiler/build/compiler.jar *.js>>jquery.caret.min.js'
