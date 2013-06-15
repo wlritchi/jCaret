@@ -1,0 +1,3 @@
+[submodule "lib/closure-compiler"]
+	path = lib/closure-compiler
+	url = https://code.google.com/p/closure-compiler/
