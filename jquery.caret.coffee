@@ -25,7 +25,6 @@ $.fn.setCaret = (start=0, end=start) ->
         this.selectionStart = start
         this.selectionEnd = end
     catch e
-      null
   return this
 
 $.fn.setCaretFromPoint = (x=0, y=0) ->
@@ -41,5 +40,4 @@ $.fn.setCaretFromPoint = (x=0, y=0) ->
       range.moveToPoint x, y
       range.select()
   catch e
-    null
   return this
